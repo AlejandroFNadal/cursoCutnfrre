@@ -20,3 +20,27 @@ void printarray(int array[], int lenght)
         printf("%d -",array[i]);
     }
 }
+int *orderbyselection(int array[], int length)
+{
+    int *punteroretorno;
+    int swap, cont, continterno,min;
+    for(cont=0;cont<(length-1);cont++)
+    {
+        min=cont;
+        for(continterno=cont+1;continterno<length;continterno++)
+        {
+            if(array[continterno]<array[min])
+            {
+                min=continterno;
+            }
+        }
+
+        if(cont != min)
+        {
+            swap=array[cont];
+            array[cont]=array[min];
+            array[min]=swap;
+        }
+    }
+    return array;
+}

@@ -62,3 +62,17 @@ int bubbleOrder(int array[], int length)
 	return array;
 
 }
+//Insercion
+/*for(cont = 1;cont <=cant; cont++)
+    {
+        swap=array[cont];
+
+        auxcont=cont-1;
+        while(auxcont>=0 && swap < array[auxcont])
+        {
+            array[auxcont+1]=array[auxcont];
+            auxcont--;
+        }
+        array[auxcont+1]= swap;
+}
+*/

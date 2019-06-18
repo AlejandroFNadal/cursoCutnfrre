@@ -1,24 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-int comparador(char s1[],char s2[])
-{
-	if(strlen(s1)!=strlen(s2))
-	{
-		return 0;
-	}
-	else
-	{
-		int n=0;
-		while(n<strlen(s1)-1)
-		{
-			if(s1[n]!=s2[n])
-				return 0;
-			n++;
-		}
-	}
-return 1;
-}
 struct clienteleido
 	{
 		int id;
@@ -59,25 +41,46 @@ return nuevalinea;
 
 void cortepais(FILE *p)
 {
-	char linea[60],aux[50];
+	char linea[60],aux[50],aux2[50];
 	struct clienteleido tempo;
 	fgets(linea,60,p);
 	tempo=retornalinea(tempo,linea);
 	strcpy(aux,tempo.pais);
+	strcpy(aux2,tempo.ciudad);
 	int cntpais=0;
+	int cntciudad=0;
+	int total=0;
 	while(tempo.id != 0)//marca de fin
 	{
 		while(tempo.id != 0 && strcmp(tempo.pais,aux)==0)
 		{
-			printf("%8d\n",tempo.id);
-			fgets(linea,30,p);
-			tempo=retornalinea(tempo,linea);
-			cntpais++;
+			while(tempo.id != 0 && strcmp(tempo.ciudad,aux2)==0)
+			{
+				printf("		|%19d\n",tempo.id);
+				fgets(linea,30,p);
+				tempo=retornalinea(tempo,linea);
+				cntciudad++;
+			}
+			printf("|-------------------------------------------------\n");
+			printf("		|Total ");
+			for(int i=0;i<strlen(aux2);i++)
+				printf("%c",aux2[i]);
+			printf(" %d \n",cntciudad);
+			cntpais=cntpais+cntciudad;
+			cntciudad=0;
+			strcpy(aux2,tempo.ciudad);
 		}
-		printf("%s %d\n",aux,cntpais);
+		int i;
+		printf("----------------------------------------------------\n");
+		printf("	|Total ");
+		for(i=0;i<strlen(aux)-2;i++)
+			printf("%c",aux[i]);
+		printf(": %d\n",cntpais);
+		total=total+cntpais;
 		cntpais=0;
 		strcpy(aux,tempo.pais);
 	}
+	printf("Total %d",total);
 }
 int main()
 {

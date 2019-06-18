@@ -1,77 +1,77 @@
-1000, Resitencia, Argentina
-1001, Resitencia, Argentina
-1002, Resitencia, Argentina
-1003, Resitencia, Argentina
-1004, Resitencia, Argentina
-1005, Resitencia, Argentina
-1006, Resitencia, Argentina
-1007, Corrientes, Argentina
-1008, Corrientes, Argentina
-1009, Corrientes, Argentina
-1010, Corrientes, Argentina
-1011, Corrientes, Argentina
-1012, Corrientes, Argentina
-1013, Corrientes, Argentina
-1014, Corrientes, Argentina
-1015, Posadas, Argentina
-1016, Posadas, Argentina
-1017, Posadas, Argentina
-1018, Posadas, Argentina
-1019, Posadas, Argentina
-1020, Posadas, Argentina
-1021, Posadas, Argentina
-1022, Posadas, Argentina
-1023, Rio_de_Janeiro,Brasil
-1024, Rio_de_Janeiro,Brasil
-1025, Rio_de_Janeiro,Brasil
-1026, Rio_de_Janeiro,Brasil
-1027, Rio_de_Janeiro,Brasil
-1028, Rio_de_Janeiro,Brasil
-1029, Rio_de_Janeiro,Brasil
-1030, Rio_de_Janeiro,Brasil
-1031, Florianopolis,Brasil
-1032, Florianopolis,Brasil
-1033, Florianopolis,Brasil
-1034, Florianopolis,Brasil
-1035, Florianopolis,Brasil
-1036, Florianopolis,Brasil
-1037, Florianopolis,Brasil
-1038, Florianopolis,Brasil
-1039, San_Pablo,Brasil
-1040, San_Pablo,Brasil
-1041, San_Pablo,Brasil
-1042, San_Pablo,Brasil
-1043, San_Pablo,Brasil
-1044, San_Pablo,Brasil
-1045, San_Pablo,Brasil
-1046, San_Pablo,Brasil
-1047, Nueva_York,EEUU 
-1048, Nueva_York,EEUU
-1049, Nueva_York,EEUU
-1050, Nueva_York,EEUU
-1051, Nueva_York,EEUU
-1052, Nueva_York,EEUU
-1053, Nueva_York,EEUU
-1054, Nueva_York,EEUU
-1055, Nueva_York,EEUU
-1056, Chicago,EEUU
-1057, Chicago,EEUU
-1058, Chicago,EEUU
-1059, Chicago,EEUU
-1060, Chicago,EEUU
-1061, Chicago,EEUU
-1062, Chicago,EEUU
-1063, Chicago,EEUU
-1064, Chicago,EEUU
-1065, Chicago,EEUU
-1066, Los_Angeles,EEUU
-1067, Los_Angeles,EEUU
-1068, Los_Angeles,EEUU
-1069, Los_Angeles,EEUU
-1070, Los_Angeles,EEUU
-1071, Los_Angeles,EEUU
-1072, Los_Angeles,EEUU
-1073, Los_Angeles,EEUU
-1074, Los_Angeles,EEUU
-0000, -----------, -------------
+1000,Resitencia,Argentina
+1001,Resitencia,Argentina
+1002,Resitencia,Argentina
+1003,Resitencia,Argentina
+1004,Resitencia,Argentina
+1005,Resitencia,Argentina
+1006,Resitencia,Argentina
+1007,Corrientes,Argentina
+1008,Corrientes,Argentina
+1009,Corrientes,Argentina
+1010,Corrientes,Argentina
+1011,Corrientes,Argentina
+1012,Corrientes,Argentina
+1013,Corrientes,Argentina
+1014,Corrientes,Argentina
+1015,Posadas,Argentina
+1016,Posadas,Argentina
+1017,Posadas,Argentina
+1018,Posadas,Argentina
+1019,Posadas,Argentina
+1020,Posadas,Argentina
+1021,Posadas,Argentina
+1022,Posadas,Argentina
+1023,Rio_de_Janeiro,Brasil
+1024,Rio_de_Janeiro,Brasil
+1025,Rio_de_Janeiro,Brasil
+1026,Rio_de_Janeiro,Brasil
+1027,Rio_de_Janeiro,Brasil
+1028,Rio_de_Janeiro,Brasil
+1029,Rio_de_Janeiro,Brasil
+1030,Rio_de_Janeiro,Brasil
+1031,Florianopolis,Brasil
+1032,Florianopolis,Brasil
+1033,Florianopolis,Brasil
+1034,Florianopolis,Brasil
+1035,Florianopolis,Brasil
+1036,Florianopolis,Brasil
+1037,Florianopolis,Brasil
+1038,Florianopolis,Brasil
+1039,San_Pablo,Brasil
+1040,San_Pablo,Brasil
+1041,San_Pablo,Brasil
+1042,San_Pablo,Brasil
+1043,San_Pablo,Brasil
+1044,San_Pablo,Brasil
+1045,San_Pablo,Brasil
+1046,San_Pablo,Brasil
+1047,Nueva_York,EEUU
+1048,Nueva_York,EEUU
+1049,Nueva_York,EEUU
+1050,Nueva_York,EEUU
+1051,Nueva_York,EEUU
+1052,Nueva_York,EEUU
+1053,Nueva_York,EEUU
+1054,Nueva_York,EEUU
+1055,Nueva_York,EEUU
+1056,Chicago,EEUU
+1057,Chicago,EEUU
+1058,Chicago,EEUU
+1059,Chicago,EEUU
+1060,Chicago,EEUU
+1061,Chicago,EEUU
+1062,Chicago,EEUU
+1063,Chicago,EEUU
+1064,Chicago,EEUU
+1065,Chicago,EEUU
+1066,Los_Angeles,EEUU
+1067,Los_Angeles,EEUU
+1068,Los_Angeles,EEUU
+1069,Los_Angeles,EEUU
+1070,Los_Angeles,EEUU
+1071,Los_Angeles,EEUU
+1072,Los_Angeles,EEUU
+1073,Los_Angeles,EEUU
+1074,Los_Angeles,EEUU
+0000,-----------,-------------
 

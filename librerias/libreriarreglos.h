@@ -2,27 +2,27 @@
 #include <time.h>
 #include <stdlib.h>
 
-void lArraywRandomData(int *array[], int lenght, int max)
+//llena un arreglo con valores aleatorios, requiere del arreglo, la longitud y el tamano maximo de los elementos
+void lArraywRandomData(int *array[], int length, int max)
 {
     srand(time(NULL));
     int i;
-    for(i = 0;i < lenght;i++)
+    for(i = 0;i < length;i++)
     {
         *(array+i)=rand()%max;
     }
 }
 
-void printarray(int array[], int lenght)
+void printarray(int array[], int length)
 {
     int i;
-    for(i=0;i<lenght;i++)
+    for(i=0;i<length;i++)
     {
         printf("%d -",array[i]);
     }
 }
-int *orderbyselection(int array[], int length)
+void orderbyselection(int array[], int length)
 {
-    int *punteroretorno;
     int swap, cont, continterno,min;
     for(cont=0;cont<(length-1);cont++)
     {
@@ -42,9 +42,8 @@ int *orderbyselection(int array[], int length)
             array[min]=swap;
         }
     }
-    return array;
 }
-int bubbleOrder(int array[], int length)
+void bubbleOrder(int array[], int length)
 {
 	int aux;
 	for(int i=0;i<=length;i++)
@@ -59,8 +58,6 @@ int bubbleOrder(int array[], int length)
 				} 
 			} 
 		} 
-	return array;
-
 }
 //Insercion
 /*for(cont = 1;cont <=cant; cont++)

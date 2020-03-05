@@ -22,6 +22,7 @@ t_nodo crear_arbol()
 }
 t_nodo crear_der(t_nodo padre)
 {
+    printf("Crear Derecha\n");
     t_nodo dr=(t_nodo)malloc(sizeof(t_nodo));
     padre->der=dr;
     return padre->der;
@@ -29,6 +30,7 @@ t_nodo crear_der(t_nodo padre)
 t_nodo crear_izq(t_nodo padre)
 {
     t_nodo iz=(t_nodo)malloc(sizeof(t_nodo));
+    printf("Crear Izquierda\n");
     padre->izq=iz;
     return padre->izq;  
 }
@@ -42,7 +44,7 @@ void rellenar_preorden(t_nodo raiz,int level,int numlevels)
 {
     //numlevels nos dira el numero de niveles que debe tener el arbol
     //asignamos el valor al nodo
-    if(level==numlevels)
+    if(level<numlevels)
     {
         raiz->dato=level;
         level+=1;

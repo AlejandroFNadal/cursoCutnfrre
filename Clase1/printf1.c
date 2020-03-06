@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main()
@@ -6,7 +7,7 @@ int main()
     int var1=3;
 
     //real
-    float var2=3.45
+    float var2=3.45;
 
     //caracter
     char var3='a';

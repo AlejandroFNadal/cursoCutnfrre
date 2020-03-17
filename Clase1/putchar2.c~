@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main()
+{
+    //caracter
+    int var3=2;
+
+    putchar(var3);
+
+    getchar();
+    return 0;
+}

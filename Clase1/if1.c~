@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+int main()
+{
+
+  int edad;
+
+  printf("Circo Trampolin\n");
+  printf("Ingrese la edad del cliente\n");
+
+  scanf("%d",&edad);
+
+  if(edad < 0)
+  {
+    print("Usted aun no ha nacido. Vayase de nuestro circo, por favor");
+  }
+  else if(edad > 0 && edad < 5)
+  {
+    printf("Felicidades, usted no paga entrada");
+  }
+  else if(edad >= 5 && edad < 18)
+  {
+    printf("Usted tiene 20% de descuento");
+  }
+  else
+  {
+    printf("Bienvenido, usted no tiene descuento. :-(");
+  }
+  getchar();
+  return 0;
+}

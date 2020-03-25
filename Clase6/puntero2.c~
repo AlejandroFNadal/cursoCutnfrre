@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+  char cadena[5]={'H','o','l','a','\0'};
+
+  printf("La cadena es %s \n",cadena);
+
+  return 0;
+}

@@ -4,19 +4,19 @@
 int main()
 {
     //entero
-    int var1=3;
+    int var1=80;
 
     //real
-    float var2=3.45;
+    float var2=30.45;
 
     //caracter
     char var3='a';
 
-    printf("Var 1 contiene %d \n",var1);
+    //printf("Var 1 contiene %e \n",var1);
 
-    printf("Var 2 contiene %f \n",var2);
+    //printf("Var 2 contiene %E \n",var2);
 
-    printf("Var 3 contiene %c \n",var3);
+    printf("Var 3 contiene %d \n",var3);
 
     getchar();
     return 0;

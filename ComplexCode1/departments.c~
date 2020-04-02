@@ -1,0 +1,25 @@
+/*Made by Alejandro Nadal
+  Task for C for Everyone, Structured Programming*/
+
+#include <stdio.h>
+
+enum dept{HR,Sales,Research,SW,Executive};
+
+struct dept_employee{
+  dept works_in;
+  int salary;
+  unsigned int social_security_n;
+};
+
+typedef struct dept_employee dept_employee;
+
+int salary_generator(dept_employee);
+
+void print_dept_employee(dept_employee);
+
+int main()
+{
+  
+  return 0;
+}
+

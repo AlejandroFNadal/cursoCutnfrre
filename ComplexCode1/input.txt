@@ -1,0 +1,10 @@
+Hydrogen
+H
+1.232
+Helium
+He
+12.32
+Americum
+Am
+43.234
+

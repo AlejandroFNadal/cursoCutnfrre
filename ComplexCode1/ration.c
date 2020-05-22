@@ -10,6 +10,7 @@
 //numberofrationals numerator denominator numerator denominator... 
 //If the file does not comply with this structure, this program will fail. 
 
+//This code could be improved through checking each number that is introduced, to see if there is a 0 division. That is done through the operations, so at least there it is covered.
 
 struct rational{
     int num;
@@ -36,10 +37,12 @@ int main(int argc, char *argv[])
     }
     else
     {
+        //open file in read mode
         fp=fopen(argv[1],"r");
         if(fp != NULL)
         {
             int value;
+            
             rational set_of_values[value];
             fscanf(fp,"%d",&value);
             printf("Number of rationals: %d\n",value);
@@ -54,10 +57,11 @@ int main(int argc, char *argv[])
             //print all values
             for(c=0;c<value;c++)
             {
-                printf("%d / %d\n",set_of_values[c].num,set_of_values[c].dem);
+                pri_R(set_of_values[c]);
             } 
             // Now lets do the sum
             rational resultado;
+            //load first element because if not, sum with cero cannot be done due to how sum is implemented.
             resultado.num=set_of_values[0].num;
             resultado.dem=set_of_values[0].dem;
             for(c=1;c< value;c++)
@@ -68,11 +72,11 @@ int main(int argc, char *argv[])
             rational divisor;
             divisor.num=value;
             divisor.dem=1;
-            //div_R(resultado,divisor,resultado);
+            div_R(resultado,divisor,&resultado);
             
             //we show the result
 
-            printf("%d / %d", resultado.num,resultado.dem);
+            pri_R(resultado);
 
             fclose(fp);
         }
@@ -103,6 +107,7 @@ void simplify(rational *val)
 {
     //first find biggest common divisor
     int divisor = gcd(val->num,val->dem);
+    //then, simplify the fraction
     val->num = val->num / divisor;
     val->dem = val-> dem / divisor;
 
@@ -116,8 +121,9 @@ void sum_R(rational a,rational b, rational *resul)
      else{
         resul->dem = a.dem * b.dem;
         resul->num = a.num * b.dem + b.num * a.dem;
+        simplify(resul); 
      }
-    simplify(resul); 
+    
 }
 
 void sust_R(rational a,rational b, rational *resul)
@@ -129,7 +135,9 @@ void sust_R(rational a,rational b, rational *resul)
     else{
         resul->dem = a.dem * b.dem;
         resul->num = a.num * b.dem - b.num * a.dem;
+        simplify(resul); 
     }
+    
 }
 
 void mul_R(rational a,rational b, rational *resul)
@@ -142,6 +150,7 @@ void mul_R(rational a,rational b, rational *resul)
     {
         resul->dem = a.dem * b.dem;
         resul->num = a.num * b.num;
+        simplify(resul); 
     }
 }
 
@@ -154,6 +163,7 @@ void div_R(rational a,rational b, rational *resul)
     else{
         resul->dem = a.dem * b.num;
         resul->num = a.num * b.dem;
+        simplify(resul); 
     }
 }
 

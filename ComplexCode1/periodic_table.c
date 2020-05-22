@@ -9,6 +9,7 @@
 #define NUMBER_ELEMENTS 10
 
 //each atom info
+
 struct elem{
     char name[14];
     char symbol[3];

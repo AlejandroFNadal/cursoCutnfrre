@@ -16,8 +16,8 @@ int main()
         for(j=0;j<400;j++)
         {
             mat_imagen[i][j][0]=rand()%255;
-            mat_imagen[i][j][1]=0;
-            mat_imagen[i][j][2]=0;
+            mat_imagen[i][j][1]=rand()%255;
+            mat_imagen[i][j][2]=rand()%255;
             
             
             

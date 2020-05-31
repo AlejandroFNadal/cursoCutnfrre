@@ -35,6 +35,6 @@ int main()
     
     
     SDL_RenderPresent(renderer);
-    SDL_Delay(5000);
+    SDL_Delay(20000);
     SDL_DestroyWindow(window);
 }

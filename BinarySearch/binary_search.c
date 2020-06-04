@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <math.h>
+
 int bsearch(int izq, int der, int pivot, int array[],int elemento)
 {
     printf("Izq %d Der %d Pivot %d val %d ",izq,der,pivot, array[pivot]);
@@ -10,11 +12,26 @@ int bsearch(int izq, int der, int pivot, int array[],int elemento)
     }
     if(array[pivot] < elemento)
     {
-        return bsearch(pivot,der,(der+pivot)/2,array,elemento);
+        if(pivot == der)
+        {
+            return -1;
+        }
+        else
+        {
+            return bsearch(pivot,der,(int)ceil(((double)der+(double)pivot)/2),array,elemento);
+        }
     }
     else
     {
-        return bsearch(izq,pivot,pivot/2,array,elemento);
+        if(izq == pivot)
+        {
+            return -1;
+        }
+        else
+        {
+            return bsearch(izq,pivot,(int)floor((double)pivot/2),array,elemento);
+        }
+        
     }
     
 }

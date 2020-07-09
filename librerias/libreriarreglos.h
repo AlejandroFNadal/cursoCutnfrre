@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 //llena un arreglo con valores aleatorios, requiere del arreglo, la longitud y el tamano maximo de los elementos
-void lArraywRandomData(int *array[], int length, int max)
+void lArraywRandomData(int *array, int length, int max)
 {
     srand(time(NULL));
     int i;
@@ -12,13 +12,21 @@ void lArraywRandomData(int *array[], int length, int max)
         *(array+i)=rand()%max;
     }
 }
-
+void lArraywOrderedData(int *array, int length, int max)
+{
+    srand(time(NULL));
+    int i;
+    for(i = 0;i < length;i++)
+    {
+        *(array+i)=i;
+    }
+}
 void printarray(int array[], int length)
 {
     int i;
     for(i=0;i<length;i++)
     {
-        printf("%d -",array[i]);
+        printf("%d ,",array[i]);
     }
 }
 void orderbyselection(int array[], int length)
@@ -43,7 +51,7 @@ void orderbyselection(int array[], int length)
         }
     }
 }
-void bubbleOrder(int array[], int length)
+void bubbleOrder(int a[], int length)
 {
 	int aux;
 	for(int i=0;i<=length;i++)

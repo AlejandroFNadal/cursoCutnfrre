@@ -8,7 +8,7 @@ struct pago{
 
 void cargar_salario(struct pago arreglo_pagos[],int cant);
 void generar_informe(struct pago arreglo_pagos[],int cant);
-void imprimir_informe(struct pago arreglo_pagos[],int cant);
+void imprimir_informe(struct pago pagos);
 
 int main()
 {
@@ -53,15 +53,22 @@ void cargar_salario(struct pago arreglo_pagos[],int cant)
 
     printf("Ingrese el salario\n");
     scanf("%d",&nuevo_pago.salario);
-    arreglo_pagos[++cant] = nuevo_pago;
+    arreglo_pagos[cant] = nuevo_pago;
 }
 void generar_informe(struct pago arreglo_pagos[],int cant)
 {
     printf("Generando informe\n");
+    for(int i =0; i < cant; i++)
+    {
+	imprimir_informe(arreglo_pagos[i]);
+	// aca tengo que guardar luego el informe en un archivo de texto
+    }
 }
-void imprimir_informe(struct pago arreglo_pagos[],int cant)
+void imprimir_informe(struct pago arreglo_pagos)
 {
-    for(int i = 0; i < cant; i++)
-	{
-	    
+  printf("------------------\n");
+  printf("Nombre: %s",arreglo_pagos.nombre);
+  printf("Apellido: %s", arreglo_pagos.apellido);
+  printf("Salario: %d\n",arreglo_pagos.salario);
+	  
 }

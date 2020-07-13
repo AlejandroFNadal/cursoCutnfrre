@@ -14,7 +14,7 @@ void imprimir_informe(Pago unPago);
 
 int main()
 {
-  struct pago arreglo_pagos[20];
+  Pago arreglo_pagos[20];
   int seleccion;
   int cantidad_liquidaciones=0;
   do{
@@ -44,9 +44,9 @@ int main()
   return 0;
 }
 
-void cargar_salario(struct pago arreglo_pagos[],int cant)
+void cargar_salario(Pago arreglo_pagos[],int cant)
 {
-    struct pago nuevo_pago;
+    Pago nuevo_pago;
     printf("Ingrese el nombre\n");
     fgets(nuevo_pago.nombre, 30, stdin);
 
@@ -57,7 +57,7 @@ void cargar_salario(struct pago arreglo_pagos[],int cant)
     scanf("%d",&nuevo_pago.salario);
     arreglo_pagos[cant] = nuevo_pago;
 }
-void generar_informe(struct pago arreglo_pagos[],int cant)
+void generar_informe(Pago arreglo_pagos[],int cant)
 {
     printf("Generando informe\n");
     for(int i =0; i < cant; i++)
@@ -66,11 +66,11 @@ void generar_informe(struct pago arreglo_pagos[],int cant)
 	// aca tengo que guardar luego el informe en un archivo de texto
     }
 }
-void imprimir_informe(struct pago arreglo_pagos)
+void imprimir_informe(Pago unPago)
 {
   printf("------------------\n");
-  printf("Nombre: %s",arreglo_pagos.nombre);
-  printf("Apellido: %s", arreglo_pagos.apellido);
-  printf("Salario: %d\n",arreglo_pagos.salario);
+  printf("Nombre: %s",unPago.nombre);
+  printf("Apellido: %s", unPago.apellido);
+  printf("Salario: %d\n",unPago.salario);
 	  
 }

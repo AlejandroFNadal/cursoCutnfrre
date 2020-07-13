@@ -8,7 +8,7 @@ struct pago{
 
 void cargar_salario(struct pago arreglo_pagos[],int cant);
 void generar_informe(struct pago arreglo_pagos[],int cant);
-void imprimir_informe(struct pago pagos);
+void imprimir_informe(struct pago unPago);
 
 int main()
 {
@@ -64,11 +64,11 @@ void generar_informe(struct pago arreglo_pagos[],int cant)
 	// aca tengo que guardar luego el informe en un archivo de texto
     }
 }
-void imprimir_informe(struct pago arreglo_pagos)
+void imprimir_informe(struct pago unPago)
 {
   printf("------------------\n");
-  printf("Nombre: %s",arreglo_pagos.nombre);
-  printf("Apellido: %s", arreglo_pagos.apellido);
-  printf("Salario: %d\n",arreglo_pagos.salario);
+  printf("Nombre: %s",unPago.nombre);
+  printf("Apellido: %s", unPago.apellido);
+  printf("Salario: %d\n",unPago.salario);
 	  
 }

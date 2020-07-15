@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+//Variables globales
+
+int cant_ventas;
+//meses van del 0 al 11
+int mes_mayor_ventas;
+int mes_menor_ventas;
+
+void print_mes(int val);
+int main()
+{
+    
+}
+
+void print_mes(val)
+{
+    printf("%d",val+1);
+}
